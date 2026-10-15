@@ -360,10 +360,7 @@ def main():
     )
 
     application.add_handler(conv_handler)
-    if __name__ == "__main__":
-   # Setup webhook
-    application.initialize()
-   application.bot.set_webhook(url="https://shoe-telegram-bot.onrender.com/8686401024:AAHR6jGeCvFuwwgDH1JGODn6qQS0IGA470")
-    
-    # Flask ሰርቨርን በ Render ፖርት ማስጀመር
-    app_flask.run(host="0.0.0.0", port=PORT)
+   if __name__ == "__main__":
+    application.initialize()
+    application.bot.set_webhook(url="https://shoe-telegram-bot.onrender.com/8686401024:AAHR6jGeCvFuWwgDHlJGODnQ6qQS0IGA470")
+    app_flask.run(host="0.0.0.0", port=PORT)
