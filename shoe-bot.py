@@ -321,7 +321,7 @@ def main():
     application = Application.builder().token(TOKEN).connect_timeout(60.0).read_timeout(60.0).build()
     application = Application.builder().token(TOKEN).connect_timeout(60.0).read_timeout(60.0).write_timeout(60.0).build()
 application = Application.builder().token(TOKEN).connect_timeout(60.0).read_timeout(60.0).write_timeout(60.0).build()
-    conv_handler = ConversationHandler(
+ conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
         states={
             MENU: [
