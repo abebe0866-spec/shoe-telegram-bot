@@ -356,7 +356,7 @@ conv_handler = ConversationHandler(
         per_message=False,
     )
 
-    application.add_handler(conv_handler)
+application.add_handler(conv_handler)
    if __name__ == "__main__":
     application.initialize()
     application.bot.set_webhook(url="https://shoe-telegram-bot.onrender.com/8686401024:AAHR6jGeCvFuWwgDHlJGODnQ6qQS0IGA470")
