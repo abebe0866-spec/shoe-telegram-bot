@@ -71,7 +71,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         await update.message.reply_text(welcome_text, reply_markup=reply_markup)
 
     return MENU
-  @app_flask.route(f"/{TOKEN}", methods=["POST"])
+@app_flask.route(f"/{TOKEN}", methods=["POST"])
 def webhook():
     update = Update.de_json(request.get_json(force=True), application.bot)
     application.update_queue.put(update)
