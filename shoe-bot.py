@@ -318,7 +318,7 @@ def main():
     Application.builder()
     application = Application.builder().token(TOKEN).build()
     application = Application.builder().token(TOKEN).connect_timeout(60.0).build()
-        .read_timeout(60.0)
+    application = Application.builder().token(TOKEN).connect_timeout(60.0).read_timeout(60.0).build()
         .write_timeout(60.0)
         .build()
     )
