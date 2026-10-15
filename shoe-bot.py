@@ -361,7 +361,7 @@ def main():
 
     application.add_handler(conv_handler)
     if __name__ == "__main__":
-    # ቦቱን በማስጀመር ዌብሆክ ሊንኩን ከ Render ሰርቨር ጋር ማገናኘት
+   # Setup webhook
     application.initialize()
    application.bot.set_webhook(url="https://shoe-telegram-bot.onrender.com/8686401024:AAHR6jGeCvFuwwgDH1JGODn6qQS0IGA470")
     
