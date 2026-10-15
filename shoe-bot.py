@@ -316,7 +316,7 @@ def main():
     # የእርስዎን የቦት ቶከን (Bot Token) እዚህ ያስገቡ
     TOKEN = "8686401024:AAHR6jGeCvFuWwgDHlJGODnQ6qQS0IGA470"
     Application.builder()
-        application = Application.builder().token(TOKEN).build()
+    application = Application.builder().token(TOKEN).build()
         .connect_timeout(60.0)
         .read_timeout(60.0)
         .write_timeout(60.0)
