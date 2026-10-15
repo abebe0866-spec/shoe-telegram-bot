@@ -369,8 +369,6 @@ app_flask = Flask(__name__)
 
 application = Application.builder().token(TOKEN).connect_timeout(60.0).read_timeout(60.0).write_timeout(60.0).build()
 
-# እዚህ ጋር የቦቱ ሃንድለሮች (Handlers) እና የውይይት ክፍሎች ይኖራሉ
-
 @app_flask.route(f"/{TOKEN}", methods=["POST"])
 def webhook():
     json_str = request.get_data().decode('UTF-8')
