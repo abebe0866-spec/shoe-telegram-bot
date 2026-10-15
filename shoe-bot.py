@@ -314,8 +314,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 def main():
     # የእርስዎን የቦት ቶከን (Bot Token) እዚህ ያስገቡ
-    TOKEN = "8686401024:AAHR6jGeCvFuWwgDHlJGODnQ6qQS0IGA470"py
-    application = (
+    TOKEN = "8686401024:AAHR6jGeCvFuWwgDHlJGODnQ6qQS0IGA470"
         Application.builder()
         .token(TOKEN)
         .connect_timeout(60.0)
