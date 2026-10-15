@@ -73,7 +73,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     return MENU
     @app_flask.route(f"/{TOKEN}", methods=["POST"])
 def webhook():
-    """ቴሌግራም የሚልካቸውን መልዕክቶች መቀበያ ዌብሆክ"""
     update = Update.de_json(request.get_json(force=True), application.bot)
     application.update_queue.put(update)
     return "OK", 200
